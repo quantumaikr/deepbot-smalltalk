@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>DeepBot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <div class="ai-container">
+      <div class="ai-header">
+        <img class="logo" src="{{ url_for('static', filename='images/logo_w.png') }}">
+      </div>
+      <div class="ai-main-display">
+        <p class="text" id="ai_message">.......</p>
+      </div>
+      <div class="ai-meta-display">
+        <pre>대화 중에 딥봇이 인지한 정보들이 이곳에 표시됩니다.</pre>
+      </div>
+    </div>
+    <div class="user-container">
+      <!-- <input id="user_message" type="text" placeholder="안녕하세요?"></input> -->
+      <button class="btn" id="mic">MIC</button>
+    </div>
+    <div class="history">
+    </div>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</html>
